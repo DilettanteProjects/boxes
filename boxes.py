@@ -64,7 +64,7 @@ class box():
         light                                             = '┤'
         heavy                                             = '┫'
         double                                            = '╣'
-    class t():
+    class T():
         light                                             = '┬'
         heavy                                             = '┳'
         double                                            = '╦'
