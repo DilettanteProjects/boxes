@@ -77,12 +77,12 @@ class box():
         heavy                                             = '╋'
         double                                            = '╬'    
     
-    def mix(*args, left=None, down=None, up=None, right=None):
+    def mix(*args, left='blank', down='blank', up='blank', right='blank'):
         """ Call with left='single', down='single', etc, 
         or for short like so: '0110'
-        Order: left, down, up, right
+        Order: hjkl (left, down, up, right)
         Style codes:
-        0/None  : Blank
+        0       : Blank
         1       : Light
         2       : Double
         3       : Heavy
@@ -91,7 +91,6 @@ class box():
         """
         def encode(style):
             codes = {'blank'    : 0,
-                     None       : 0,
                      'light'    : 1,
                      'single'   : 1,
                      'double'   : 2,
